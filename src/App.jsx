@@ -64,7 +64,7 @@ function App() {
         </form>
       )}
 
-      {isLoggedIn && <p className="text-green-600 font-bold">Welcome User</p>}
+      {isLoggedIn && <p className="text-green-600 font-bold">Welcome, user</p>}
     </div>
   );
 }
