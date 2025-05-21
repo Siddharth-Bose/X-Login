@@ -41,6 +41,7 @@ function App() {
                   [e.target.name]: e.target.value,
                 }))
               }
+              required
             />
           </div>
           <div>
@@ -56,6 +57,7 @@ function App() {
                   [e.target.name]: e.target.value,
                 }))
               }
+              required
             />
           </div>
           <button type="submit">Submit</button>
