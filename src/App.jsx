@@ -26,7 +26,7 @@ function App() {
         </p>
       )}
 
-      {!isLoggedIn && (
+      {!isLoggedIn ? (
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="username">Username: </label>
@@ -62,9 +62,9 @@ function App() {
           </div>
           <button type="submit">Submit</button>
         </form>
+      ) : (
+        <p className="text-green-600 font-bold">Welcome, user</p>
       )}
-
-      {isLoggedIn && <p className="text-green-600 font-bold">Welcome, user</p>}
     </div>
   );
 }
